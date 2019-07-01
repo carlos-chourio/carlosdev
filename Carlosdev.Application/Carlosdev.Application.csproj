@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Categories\" />
+    <Folder Include="Comments\" />
+    <Folder Include="Posts\Commands\" />
+    <Folder Include="Users\" />
+    <Folder Include="Tags\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Carlosdev.Domain\Carlosdev.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
