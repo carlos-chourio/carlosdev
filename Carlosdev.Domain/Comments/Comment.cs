@@ -3,8 +3,7 @@ using Carlosdev.Domain.Posts;
 using Carlosdev.Domain.Users;
 using System;
 
-namespace Carlosdev.Domain.Comments
-{
+namespace Carlosdev.Domain.Comments {
     public class Comment : IEntity
     {
         public int Id { get;set; }
