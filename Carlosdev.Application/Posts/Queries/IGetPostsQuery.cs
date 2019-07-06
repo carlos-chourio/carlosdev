@@ -1,8 +1,8 @@
 ﻿using Carlosdev.Domain.Posts;
-using System.Collections.Generic;
+using System.Linq;
 
 namespace Carlosdev.Application.Posts.Queries {
-    public interface IGetPostsQuery {
-        IEnumerable<Post> GetAllPosts();
+    public interface IGetPostQuery {
+        IQueryable<Post> Execute();
     }
 }

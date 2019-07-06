@@ -6,8 +6,8 @@ namespace Carlosdev.Application.Interfaces.Persistence {
     public interface IAsyncRepository<TEntity> : IAsyncUnitOfWork where TEntity : IEntity {
         Task Add(TEntity entity);
         Task Remove(int id);
-        Task<TEntity> Get(int id);
-        Task<IQueryable<TEntity>> GetAll();
-        Task Update(TEntity entity);
+        Task<TEntity> GetAsync(int id);
+        Task<IQueryable<TEntity>> GetAllAsync();
+        Task UpdateAsync(TEntity entity);
     }
 }

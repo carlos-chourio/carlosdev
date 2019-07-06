@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Comments\" />
+    <Folder Include="Categories\" />
+    <Folder Include="Controller\" />
+    <Folder Include="Tags\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0-preview6.19304.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0-preview6.19304.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Carlosdev.Common.IoC\Carlosdev.Common.IoC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Carlosdev.Application">
+      <HintPath>..\Carlosdev.Application\bin\Debug\netstandard2.0\Carlosdev.Application.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
